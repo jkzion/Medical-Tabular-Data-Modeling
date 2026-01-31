@@ -9,11 +9,13 @@ Key files:
 # History:
 
 **20/1/26**
+
 - Created a basic XGBoost program that outputs ACC and AUC of the UCI heart disease dataset. Basic ablation, dropping a few key demographics.
 - Modified the program to try every combination of dropping up to 3 variables. With 14 total variables, this meant running through 14c1+14c2+14c3=469 combinations.
 - Experimented with the program and reflected the reliability of XGBoost with regards to algorithmic bias
 
 **27/1/26**
+
 Changes:
 - Modular multi-class system (main.py, preprocessor.py, models.py, evaluator.py)
 - Easier to swap out and work with diff datasets (still needs manual editing of code)
@@ -46,6 +48,7 @@ Project Directions:
 
 
 **31/1/26**
+
 Added to the code:
 - Stacking ensemble option for any 2 models.
 - Stratified K-fold cross-validation, 5 folds
